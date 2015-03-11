@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.cordobook.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Rappelle-toi</name>
+  <description>L'application de démonstration du livre</description>
+  <content src="index.html"/>
+  <access origin="https://maps.googleapis.com"/>
+  <preference name="target-device" value="handheld"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="detect-data-types" value="false"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="StatusBarOverlaysWebView" value="true"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="Orientation" value="portrait"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <icon src="www/img/icon.png"/>
+  <platform name="android">
+    <icon src="www/res/icon/android/icon-36-ldpi.png" density="ldpi"/>
+    <icon src="www/res/icon/android/icon-48-mdpi.png" density="mdpi"/>
+    <icon src="www/res/icon/android/icon-72-hdpi.png" density="hdpi"/>
+    <icon src="www/res/icon/android/icon-96-xhdpi.png" density="xhdpi"/>
+    <icon src="www/res/icon/android/icon-144-xhdpi.png" density="xhdpi"/>
+    <splash src="www/res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="www/res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="www/res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="www/res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+  </platform>
+  <platform name="ios">
+    <icon src="www/res/icon/ios/icon.png" width="57" height="57"/>
+    <icon src="www/res/icon/ios/icon-72.png" width="72" height="72"/>
+    <icon src="www/res/icon/ios/icon@2x.png" width="114" height="114"/>
+    <icon src="www/res/icon/ios/icon-72@2x.png" width="144" height="144"/>
+    <splash src="www/res/screen/ios/Default~iphone.png" width="320" height="480"/>
+    <splash src="www/res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+    <splash src="www/res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
+  </platform>
+</widget>

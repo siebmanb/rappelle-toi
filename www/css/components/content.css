@@ -1,0 +1,20 @@
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  overflow: auto;
+  -webkit-box-flex: 1;
+          box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1;
+      -webkit-box-orient: vertical;
+              box-orient: vertical;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content > * {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}

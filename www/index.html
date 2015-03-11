@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rappelle-toi</title>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-pacifico.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="app">
+
+    <!-- Timeline view -->
+    <section class="view" id="timeline">
+      <header class="header bar">
+        <button class="j-clear button button--danger fa fa-times-circle" type="button">
+          <span class="button__text">Supprimer</span>
+        </button>
+        <h1 class="app__title bar__title">Rappelle-toi</h1>
+        <button class="j-toggle button fa fa-plus-circle" type="button">
+          <span class="button__text">Ajouter</span>
+        </button>
+      </header>
+      <nav class="j-menu header bar menu">
+        <a class="button button--legend fa fa-camera" href="#picture">
+          <span class="button__text">Photo</span>
+        </a>
+        <a class="button button--legend fa fa-video-camera" href="#video">
+          <span class="button__text">Vid&eacute;o</span>
+        </a>
+        <a class="button button--legend fa fa-pencil" href="#text">
+          <span class="button__text">Texte</span>
+        </a>
+        <a class="button button--legend fa fa-map-marker" href="#location">
+          <span class="button__text">Position</span>
+        </a>
+      </nav>
+      <ol class="j-timeline content timeline"></ol>
+    </section>
+
+    <!-- Picture modal view -->
+    <section class="view modal" id="picture">
+      <header class="header bar">
+        <a class="button button--danger fa fa-chevron-circle-up" href="#timeline">
+          <span class="button__text">Retour</span>
+        </a>
+        <h1 class="bar__title">Prendre une photo</h1>
+        <button class="button button--ok fa fa-check-circle" form="post-picture">
+          <span class="button__text">Valider</span>
+        </button>
+      </header>
+      <form class="j-form form content" id="post-picture" action="">
+        <div class="form__section form__year">
+          <label class="form__control">
+            <input class="j-year form__input" type="number" pattern="\d+" name="year">
+            <span class="form__label">Année</span>
+          </label>
+        </div>
+        <div class="form__section form__content">
+          <div class="form__control form__control--column">
+            <div class="j-preview content form__input form__preview"></div>
+            <button class="j-takePicture form__label button button--block button--legend" type="button">
+              <span class="button__loader fa fa-circle-o-notch fa-spin"></span>
+              <span class="button__legend fa fa-camera"></span>
+              <span class="button__text">Prendre une photo</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Video modal view -->
+    <section class="view modal" id="video">
+      <header class="header bar">
+        <a class="button button--danger fa fa-chevron-circle-up" href="#timeline">
+          <span class="button__text">Retour</span>
+        </a>
+        <h1 class="bar__title">Prendre une vid&eacute;o</h1>
+        <button class="button button--ok fa fa-check-circle" form="post-video">
+          <span class="button__text">Valider</span>
+        </button>
+      </header>
+      <form class="j-form form content" id="post-video" action="">
+        <div class="form__section form__year">
+          <label class="form__control">
+            <input class="j-year form__input" type="number" pattern="\d+" name="year">
+            <span class="form__label">Année</span>
+          </label>
+        </div>
+        <div class="form__section form__content">
+          <div class="form__control form__control--column">
+            <div class="j-preview content form__input form__preview"></div>
+            <button class="j-takeVideo form__label button button--block button--legend" type="button">
+              <span class="button__loader fa fa-circle-o-notch fa-spin"></span>
+              <span class="button__legend fa fa-video-camera"></span>
+              <span class="button__text">Prendre une vid&eacute;o</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Text modal view -->
+    <section class="view modal" id="text">
+      <header class="header bar">
+        <a class="button button--danger fa fa-chevron-circle-up" href="#timeline">
+          <span class="button__text">Retour</span>
+        </a>
+        <h1 class="bar__title">&Eacute;crire un texte</h1>
+        <button class="button button--ok fa fa-check-circle" form="post-text">
+          <span class="button__text">Valider</span>
+        </button>
+      </header>
+      <form class="j-form form content" id="post-text" action="">
+        <div class="form__section form__year">
+          <label class="form__control">
+            <input class="j-year form__input" type="number" pattern="\d+" name="year">
+            <span class="form__label">Année</span>
+          </label>
+        </div>
+        <div class="form__section form__content">
+          <label class="form__control form__control--column">
+            <textarea class="j-text form__input" name="content" max-length=1000></textarea>
+            <span class="form__label fa fa-pencil"></span>
+            <span class="button__text">&Eacute;crire un texte</span>
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <!-- Location modal view -->
+    <section class="view modal" id="location">
+      <header class="header bar">
+        <a class="button button--danger fa fa-chevron-circle-up" href="#timeline">
+          <span class="button__text">Retour</span>
+        </a>
+        <h1 class="bar__title">Ajouter une position</h1>
+        <button class="button button--ok fa fa-check-circle" form="post-location">
+          <span class="button__text">Valider</span>
+        </button>
+      </header>
+      <form class="j-form form content" id="post-location" action="">
+        <div class="form__section form__year">
+          <label class="form__control">
+            <input class="j-year form__input" type="number" pattern="\d+" name="year">
+            <span class="form__label">Année</span>
+          </label>
+        </div>
+        <div class="form__section form__content">
+          <div class="form__control form__control--column">
+            <div class="j-preview content form__input form__preview"></div>
+            <button class="j-locate form__label button button--block button--legend" type="button">
+              <span class="button__loader fa fa-circle-o-notch fa-spin"></span>
+              <span class="button__legend fa fa-map-marker"></span>
+              <span class="button__text">Ajouter une position</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Templates -->
+    <script id='imageTemplate' type="html/template">
+      <img class="j-image timeline__image" src="{{content}}" alt="">
+    </script>
+    <script id='videoTemplate' type="html/template">
+      <video class="j-video timeline__video" preload="metadata" poster="data:," controls>
+        <source src="{{content}}" type="video/mp4">
+      </video>
+    </script>
+    <script id='textTemplate' type="html/template">
+      <pre class="timeline__text">{{content}}</pre>
+    </script>
+    <script id='locationTemplate' type="html/template">
+      <img class="j-map timeline__location" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&scale=2&zoom=12&markers={{content}}" alt="">
+    </script>
+    <script id="helpTemplate" type="html/template">
+      <li class="timeline__entry timeline__entry--help">
+        <img class="timeline__image" src="img/icon.png" alt="">
+      </li>
+    </script>
+    <script id='timelineTemplate' type="html/template">
+      <li class="j-entry timeline__entry" id="{{id}}">
+        <span class="timeline__date">{{year}}</span>
+        <div class="timeline__content">
+          {{html}}
+          <button class="j-delete timeline__delete
+            button button--block button--legend button--danger
+            fa fa-times-circle" type="button" data-entry-id="{{id}}">
+            Supprimer
+          </button>
+        </div>
+      </li>
+    </script>
+
+    <!-- Scrips imports -->
+    <script src="cordova.js"></script>
+    <script src="js/lib/fastclick.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/views/modal.js"></script>
+    <script src="js/views/timeline.js"></script>
+    <script src="js/views/picture.js"></script>
+    <script src="js/views/video.js"></script>
+    <script src="js/views/text.js"></script>
+    <script src="js/views/location.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 1em 0;
+    -webkit-box-align: center;
+            box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+         -webkit-box-pack: justify;
+                 box-pack: justify;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+
+.bar__title {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+          box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1;
+}
+
+.bar .button {
+  max-width: 25%;
+  padding: 0.25em 0.75em;
+}
+
+.bar .button__text { font-size: 0.75em; }

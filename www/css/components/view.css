@@ -1,0 +1,12 @@
+.view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+      -webkit-box-orient: vertical;
+              box-orient: vertical;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}

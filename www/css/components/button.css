@@ -1,0 +1,37 @@
+.button,
+.button__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.button {
+  background: none;
+  border: none;
+  display: inline-block;
+  font-size: inherit;
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+
+.button:not(.button--legend)::before { margin-right: 0.125em; }
+
+.button:disabled,
+.button:active { opacity: 0.75; }
+
+.button--block,
+.button--legend::before,
+.button__legend,
+.button__text { display: block; }
+
+.button--block,
+.button__text { width: 100%; }
+
+.button--legend::before,
+.button__legend { margin-bottom: 0.25em; }
+
+.button:not(:disabled) .button__loader,
+.button:disabled .button__loader + .button__legend { display: none; }

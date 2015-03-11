@@ -1,0 +1,94 @@
+.form .button { font-size: 1.25em; }
+
+.form .button__legend { margin-bottom: 0; }
+
+/* https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+.form .button__text {
+  border: none;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+}
+
+.form__section { margin-top: 0.75em; padding: 0 10%; }
+
+.form__year .form__input {
+  font-size: 1.25em;
+  text-align: right;
+}
+
+.form__content {
+  position: relative;
+  -webkit-box-flex: 1;
+          box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1;
+}
+
+.form__content > .form__control,
+.form .button__text { position: absolute; }
+
+.form__content > .form__control {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.form__control,
+.form__input,
+.form__label { display: block; }
+
+.form__control,
+.form__control--column .form__label,
+.form__input { width: 100%; }
+
+.form__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.form__control--column .form__label {
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 80%;
+}
+
+.form__control--column {
+      -webkit-box-orient: vertical;
+              box-orient: vertical;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__label,
+.form__input { padding: 0.5em; }
+
+.form__label { font-size: 0.75em; }
+
+.form__input {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  height: 100%;
+  margin: 0;
+  resize: none;
+  -webkit-appearance: none;
+  -webkit-box-flex: 1;
+          box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1;
+  -webkit-box-ordinal-group: 2;
+          box-ordinal-group: 2;
+              -webkit-order: 2;
+                      order: 2;
+}
+
+.form__preview {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

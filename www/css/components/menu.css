@@ -1,0 +1,16 @@
+.menu { padding: 0.5em 0; }
+
+/* https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+.menu:not(.s-visible):not(:focus) {
+  border: none;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.menu .button { font-size: 1.5em; }
+
+.menu .button__text { font-size: 0.5em; }

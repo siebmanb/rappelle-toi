@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  id="dependencies" version="1.0.0">
+  <name>Cordova app dependencies</name>
+  <dependency id="org.apache.cordova.camera"/>
+  <dependency id="org.apache.cordova.dialogs"/>
+  <dependency id="org.apache.cordova.geolocation"/>
+  <dependency id="org.apache.cordova.media-capture"/>
+  <dependency id="org.apache.cordova.splashscreen"/>
+  <dependency id="org.apache.cordova.statusbar"/>
+</plugin>
