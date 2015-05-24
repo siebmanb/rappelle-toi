@@ -19,3 +19,10 @@ As it is intended to be **educational only**, *Rappelle-toi* is meant to remain 
 5. and finally run `cordova run` or `cordova emulate` depending on your preferred deployment target
 
 If you want to contribute, note that the book also teaches you **how to debug** this kind of apps, plus you can use the [GapReload](https://github.com/fingerproof/cordova-plugin-gapreload) plugin to enjoy a faster development workflow.
+
+## Screenshots
+
+![An empty timeline](https://raw.githubusercontent.com/sebastien-p/rappelle-toi/master/screenshots/empty-timeline.png)
+![The text view](https://raw.githubusercontent.com/sebastien-p/rappelle-toi/master/screenshots/text-view.png)
+![The location view](https://raw.githubusercontent.com/sebastien-p/rappelle-toi/master/screenshots/location-view.png)
+![An timeline showing two entries](https://raw.githubusercontent.com/sebastien-p/rappelle-toi/master/screenshots/timeline.png)
