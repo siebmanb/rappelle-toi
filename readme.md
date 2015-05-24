@@ -1,14 +1,14 @@
-= Rappelle-toi
+# Rappelle-toi
 
 This repository contains the souce code of the *Rappelle-toi* mobile app featured in the *[Applications mobiles avec Cordova et PhoneGap](http://www.eyrolles.com/Informatique/Livre/applications-mobiles-avec-cordova-et-phonegap-9782212140521)* book published by [@Eyrolles](https://twitter.com/eyrolles) and written by [@fingerproof](https://twitter.com/fingerproof) and [@siebmanb](https://twitter.com/siebmanb).
 
 *Rappelle-toi* is a [Cordova](https://cordova.apache.org/)/[PhoneGap](http://phonegap.com/) application developped using Web technologies like HTML, CSS and JavaScript. It is intended to run on **iOS and Android**, preferably on the latest versions of both these mobile operating systems.
 
-The app is **some kind of diary** and allows the user to associate a year and a picture, a video clip, some text or a geolocation to make an entry which will then be displayed in a sorted timeline. Entries are saved locally and can be deleted if need be.
+The app is **some kind of a diary** allowing the user to associate a year and a picture, a video clip, some text or a geolocation to make an entry which will then be displayed in a sorted timeline. Entries are saved locally and can be deleted if need be.
 
 As it is intended to be **educational only**, *Rappelle-toi* is meant to remain relatively simple and its source files must be fully annotated. That said, everyone willing to contribute is very welcome to do so submitting one or more pull requests :)
 
-== Running the app
+## Running the app
 
 *Applications mobiles avec Cordova et PhoneGap* shows you how to install and setup Cordova/PhoneGap then, to run the app, you must open a terminal window and:
 
